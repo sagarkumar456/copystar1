@@ -1,0 +1,49 @@
+@media (max-width: 768px) {
+    #nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        background-color: #000;
+        display: none;
+    }
+
+    #nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .cross {
+        display: none;
+        font-size: 28px;
+        cursor: pointer;
+        color: white;
+    }
+
+    .body1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    #home {
+        justify-content: flex-start; /* Moves content to top */
+        padding-top: 2px;
+    }
+
+    #home h1, #home p, #home button {
+        margin-top: 10px;
+    }
+
+    #home button {
+        margin-top: 20px;
+    }
+    
+    
+}
+    
+
+
+

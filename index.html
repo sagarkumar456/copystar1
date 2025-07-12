@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Online Service Nepal | Copystar international Service</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="phone.css" />
+    <link rel="stylesheet" href="contact.css">
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="img/navbarlogo.png" alt="Copystar international Service" />
+        </div>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <div class="cross" id="cross">&times;</div>
+        <ul id="nav-links">
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services">Services</a></li>
+            <li class="item"><a href="#about">About Us</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+            <li class="item"><a href="#email">Email</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <!-- <img src="img/banner.png" alt="Copystar international Banner" class="home-img"> -->
+        <h1 class="h-primary">Welcome to CopyStar </h1>
+        <p>Copiers & Printers – Sales, Service & Parts</p>
+        <!-- <p>copiers — trusted by businesses worldwide for their performance, durability, and print quality.</p> -->
+    </section>
+
+
+     <section id="services" class="body1">
+        <div class="box">
+            <img src="img/all part.png" alt="Service 2" />
+            <h2>All Xerox & Canon Machine Parts Available</h2>
+            <p>Rollers, Drums, Gears, Grease & More – One-Stop Solution for All Components.</p>
+        </div>
+        <div class="box">
+            <img src="img/gaer.png" alt="Service 3" />
+            <h2>Cloud Solutions</h2>
+            <p>Robust cloud services for secure data and seamless operations.</p>
+        </div>
+        <div class="box">
+            <img src="img/xerox1.png" alt="Service 2" />
+            <h2>🖨️ Xerox All-in-One Printer</h2>
+            <p>35 ppm | A3/A4 | Duplex 1200 dpi Print | Scan | Copy | Fax Wi-Fi & Ethernet | Touchscreen</p>
+        </div>
+        <div class="box">
+            <img src="img/toner.png" alt="Service 3" />
+            <h2>Original & Compatible Toners Available for All Xerox and Canon Models</h2>
+            <p>Black & Color | 1KG Powder | High Yield | Best Print Quality.</p>
+        </div>
+        
+        <div class="see-more-container">
+            <button id="seeMoreBtn" class="see-more-btn">See More Services</button>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('seeMoreBtn').addEventListener('click', function() {
+            window.location.href = 'services-full.html'; // Redirect to the new page
+        });
+    </script>
+
+    <!-- RewardClaimProcessor -->
+    <section class="hero-section">
+        <div class="hero-content-wrapper">
+            <div class="gift-box-container">
+                <img src="img/gift.png" alt="Gift Box" class="gift-box-img">
+            </div>
+
+            <div class="text-content-container">
+                <p class="subtitle animate-fade-in">Exclusive Offer for Our Customers</p>
+                <h1 class="main-title animate-slide-up">Claim Your Free Reward!<br><span class="highlight"> </span></h1>
+                <p class="description animate-fade-in">Win a free Copystar product and get discount coupons up to 40%
+                    off on all items.</p>
+
+                <div class="input-form animate-slide-up">
+                    <form id="rewardForm">
+                        <div class="input-group">
+                            <span class="country-code">+91</span>
+                            <input type="tel" id="phoneNumber" name="phone_number" placeholder="Enter your phone no."
+                                aria-label="Enter your phone number" required>
+                            <button type="submit" class="claim-btn">Claim your reward</button>
+                        </div>
+                        <p class="validation-info animate-fade-in">
+                            <span class="info-icon">&#x2139;</span> Enter your valid phone number. If your number found
+                            invalid you're not able to claim your free reward
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="floating-contact animate-fade-in">
+        <a href="tel:+916299134504" aria-label="Call us">&#9742;</a>
+    </div>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a Nepal-based tech company offering digital solutions across the globe.</p>
+    </section>
+
+    <section id="contact">
+        <div class="contact-form-container">
+            <h2 class="form-title">Connect With Us</h2>
+            <form id="contact-form" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div id="form-status" style="margin-top: 15px; font-weight: bold;"></div>
+            <!-- Ek style add kar diya hai taaki status message dikhe -->
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-left">
+            <img src="img/sagar.png" alt="Developer" class="dev-img">
+            <span>Developer: Sagar Kumar</span>
+        </div>
+        <div class="footer-right">
+            <p>&copy; 2025 Copystar International Service | All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const cross = document.getElementById("cross");
+        const navLinks = document.getElementById("nav-links");
+
+        hamburger.onclick = () => {
+            navLinks.classList.toggle("active");
+            hamburger.style.display = "none";
+            cross.style.display = "block";
+        };
+
+        cross.onclick = () => {
+            navLinks.classList.remove("active");
+            cross.style.display = "none";
+            hamburger.style.display = "block";
+        };
+    </script>
+
+    <!-- ye code home page ke backgourd me chaange ho raha hai uska hai -->
+    <script>
+        const images = [
+            'img/homepage1.png',
+            'img/copier-scanner.png',
+            'img/new_image.png'
+        ];
+
+        let current = 0;
+        const homeSection = document.getElementById('home');
+
+        function changeBackground() {
+            homeSection.classList.remove('fade');
+            void homeSection.offsetWidth; // Trigger reflow for animation restart
+            homeSection.style.backgroundImage = `url('${images[current]}')`;
+            homeSection.classList.add('fade');
+            current = (current + 1) % images.length;
+        }
+
+        setInterval(changeBackground, 5000);
+        changeBackground(); // Initial call
+    </script>
+
+    <!-- ye Connect With Us javaacript hai jo google shheet me save hota  hai -->
+    <script>
+        // Ye function tab chalegi jab pura HTML document load ho jayega.
+        document.addEventListener('DOMContentLoaded', function () {
+            // Apne Google Apps Script Web App ka URL yahan daalein.
+            // Yeh woh URL hai jo aapko Apps Script deploy karne ke baad mila tha.
+            const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx5pOK2iM72CgSrlWHksO-Pkjwhdy0eFOOPB6DDa3sePvJ33U3BUnFOZfOY8LUi1Svn/exec'; // *** Yahan apni Web App URL daalein ***
+
+            const contactForm = document.getElementById('contact-form');
+            // Phone input aur validation message elements ko bhi include kar lete hain
+            const phoneInput = document.getElementById('phone'); // Ensure your HTML has <input id="phone" ...>
+            const phoneValidationMessage = document.getElementById('phone-validation-message'); // Ensure your HTML has <div id="phone-validation-message"></div>
+            const formStatusDiv = document.getElementById('form-status'); // Yeh div aapke HTML mein hona chahiye status messages dikhane ke liye
+
+            // Real-time validation for phone number input (agar HTML mein phone field aur validation message div hai)
+            if (phoneInput && phoneValidationMessage) {
+                phoneInput.addEventListener('input', function () {
+                    if (phoneInput.validity.patternMismatch) {
+                        phoneValidationMessage.textContent = 'Please enter exactly 10 digits (numbers only).';
+                    } else {
+                        phoneValidationMessage.textContent = '';
+                    }
+                });
+            }
+
+            // Form submit event ko listen karte hain.
+            contactForm.addEventListener('submit', function (e) {
+                e.preventDefault(); // Form ka default submission rokte hain (page reload nahi hoga).
+
+                formStatusDiv.textContent = 'Sending message...'; // Status update
+                formStatusDiv.className = ''; // Pichle status styles ko clear karte hain
+
+                // Client-side validation: Submit karne se pehle poore form ko validate karein
+                if (!contactForm.checkValidity()) {
+                    formStatusDiv.textContent = 'Please fill all required fields correctly.';
+                    formStatusDiv.className = 'status-error';
+                    contactForm.reportValidity(); // Browser ke default HTML5 validation messages dikhayen
+                    return; // Agar validation fail hota hai toh function yahin rok dein
+                }
+
+                // Form data ko FormData object mein collect karte hain.
+                // Yeh automatically input fields ke 'name' attribute ko use karta hai.
+                const formData = new FormData(contactForm);
+
+                // Fetch API ka istemal karke data ko Apps Script URL par bhejte hain.
+                fetch(SCRIPT_URL, {
+                    method: 'POST',
+                    body: formData // FormData object automatically data ko sahi format mein bhejta hai.
+                })
+                    .then(response => {
+                        // Check karte hain ki response theek hai ya nahi (HTTP status 200-299)
+                        if (!response.ok) {
+                            throw new Error(`HTTP error! status: ${response.status}`);
+                        }
+                        return response.json(); // Response ko JSON format mein parse karte hain.
+                    })
+                    .then(data => {
+                        // Agar Apps Script se 'success' response mila.
+                        if (data.result === 'success') {
+                            // *** Yahan naya success message set kiya gaya hai ***
+                            formStatusDiv.textContent = 'Message received. We\'ll contact you soon.';
+                            formStatusDiv.className = 'status-success'; // Success ke liye CSS class
+                            contactForm.reset(); // Form fields ko clear karte hain.
+                            if (phoneValidationMessage) { // Phone validation message ko bhi clear karein
+                                phoneValidationMessage.textContent = '';
+                            }
+                        } else {
+                            // Agar Apps Script se error response mila.
+                            formStatusDiv.textContent = 'Error: ' + (data.message || 'Unknown error.');
+                            formStatusDiv.className = 'status-error'; // Error ke liye CSS class
+                        }
+                    })
+                    .catch(error => {
+                        // Network error ya fetch operation mein koi aur error.
+                        console.error('Error:', error);
+                        formStatusDiv.textContent = 'There was a problem sending your message. Please try again.';
+                        formStatusDiv.className = 'status-error'; // Error ke liye CSS class
+                    });
+            });
+        });
+
+    </script>
+
+    <!-- RewardClaimProcessor----------------- -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const rewardForm = document.getElementById('rewardForm');
+            const phoneNumberInput = document.getElementById('phoneNumber');
+            const validationInfo = document.querySelector('.validation-info');
+            const textContentContainer = document.querySelector('.text-content-container');
+            const floatingContact = document.querySelector('.floating-contact a');
+
+            // Yahan apni Google Apps Script Web App URL paste karein
+            // Ensure this is the URL from your latest Apps Script deployment with 'Anyone' access
+            const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbwOyCnPSm8LlGiSxb01x7vsBJxT2GsXuphEfD1P_6afUuOxv_EeSHdLWs1Z6zysNWww/exec';
+
+            // Function to generate a simple coupon code (e.g., "FLAT100OFF-XXXX")
+            function generateFlatOffCouponCode() {
+                const characters = '0123456789';
+                let result = 'FLAT100OFF-';
+                for (let i = 0; i < 4; i++) { // 4 random digits
+                    result += characters.charAt(Math.floor(Math.random() * characters.length));
+                }
+                return result;
+            }
+
+            // 1. Form Submission (Google Sheet Save & Display Message)
+            rewardForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+
+                const phoneNumber = phoneNumberInput.value.trim();
+
+                if (phoneNumber === '') {
+                    validationInfo.textContent = 'Please enter your phone number.';
+                    validationInfo.style.color = 'red';
+                    return;
+                }
+                if (!/^\d{10}$/.test(phoneNumber)) {
+                    validationInfo.textContent = 'Please enter a valid 10-digit phone number.';
+                    validationInfo.style.color = 'red';
+                    return;
+                }
+
+                validationInfo.textContent = 'Processing your request...';
+                validationInfo.style.color = '#777';
+                const submitButton = rewardForm.querySelector('.claim-btn');
+                submitButton.disabled = true;
+
+                const couponCode = generateFlatOffCouponCode(); // Generate the coupon code here
+
+                try {
+                    const response = await fetch(WEB_APP_URL, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'text/plain;charset=utf-8', // Required for Google Apps Script
+                        },
+                        body: JSON.stringify({
+                            phoneNumber: phoneNumber,
+                            couponCode: couponCode // Send the generated coupon code to Apps Script
+                        }),
+                    });
+
+                    const result = await response.json();
+
+                    if (result.status === 'success') {
+                        // Success message and coupon code display
+                        textContentContainer.innerHTML = `
+                        <h2 class="animate-fade-in" style="color: #6a0dad; text-align: center; font-size: 2.5rem; margin-bottom: 1rem;">Congratulations!</h2>
+                        <p class="animate-fade-in" style="font-size: 1.8rem; text-align: center; color: #333; font-weight: bold;">
+                            You got <span style="color: #28a745;">FLAT 100 OFF</span>
+                        </p>
+                        <div class="coupon-display animate-slide-up">
+                            <strong>${couponCode}</strong>
+                            <button class="copy-coupon-btn" data-coupon="${couponCode}">Copy Code</button>
+                        </div>
+                        <p class="animate-fade-in" style="font-size: 0.9rem; text-align: center; margin-top: 0.5rem; color: #555;">
+                            This FLAT 100 OFF is valid when you purchase products worth Rs. 1000 or more.
+                        </p>
+                        <p class="animate-fade-in" style="font-size: 0.9rem; text-align: center; margin-top: 1.0rem; color: #555;">
+                            Your unique coupon code has been sent to your registered number and saved.
+                        </p>
+                    `;
+                        rewardForm.style.display = 'none'; // Hide the form
+
+                        // Add copy button functionality
+                        const copyBtn = document.querySelector('.copy-coupon-btn');
+                        if (copyBtn) {
+                            copyBtn.addEventListener('click', () => {
+                                const codeToCopy = copyBtn.dataset.coupon;
+                                navigator.clipboard.writeText(codeToCopy).then(() => {
+                                    copyBtn.textContent = 'Copied!';
+                                    setTimeout(() => {
+                                        copyBtn.textContent = 'Copy Code';
+                                    }, 2000);
+                                }).catch(err => {
+                                    console.error('Failed to copy text: ', err);
+                                    alert('Failed to copy. Please copy manually: ' + codeToCopy);
+                                });
+                            });
+                        }
+
+                    } else {
+                        validationInfo.textContent = `Error: ${result.message || 'Something went wrong.'}`;
+                        validationInfo.style.color = 'red';
+                    }
+
+                } catch (error) {
+                    console.error('Error submitting data:', error);
+                    validationInfo.textContent = 'Network error or server issue. Please try again.';
+                    validationInfo.style.color = 'red';
+                } finally {
+                    submitButton.disabled = false;
+                }
+            });
+
+            // 2. Call Us Icon Functionality
+            const contactPhoneNumber = "+916299134504"; // Replace with your actual contact number
+            if (floatingContact) {
+                floatingContact.href = `tel:${contactPhoneNumber}`;
+                floatingContact.addEventListener('click', () => {
+                    console.log(`Calling ${contactPhoneNumber}...`);
+                });
+            }
+
+        });
+    </script>
+
+</body>
+
+</html>
